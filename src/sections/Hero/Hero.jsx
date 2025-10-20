@@ -25,38 +25,44 @@ function Hero() {
         <img
           src={heroImg}
           className={styles.hero}
-          alt="Profile picture of Harris Johnsen"
+          alt="Profile picture of George"
         />
         <img
           className={styles.colorMode}
           src={themeIcon}
-          alt="Color mode icon"
+          alt="Toggle color mode"
           onClick={toggleTheme}
+          role="button"
+          tabIndex={0}
         />
       </div>
+
       <div className={styles.info}>
         <h1>
-          Harris
-          <br />
-          Johnsen
+          George K.
         </h1>
-        <h2>Frontend Developer</h2>
+        <h2>Software Developer</h2>
+
         <span>
-          <a href="https://twitter.com/" target="_blank">
-            <img src={twitterIcon} alt="Twitter icon" />
+          {/* TODO: replace hrefs with Lawrence's real profiles */}
+          <a href="https://github.com/clouds1729" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <img src={githubIcon} alt="GitHub icon" />
           </a>
-          <a href="https://github.com/" target="_blank">
-            <img src={githubIcon} alt="Github icon" />
-          </a>
-          <a href="https://linkedin.com/" target="_blank">
-            <img src={linkedinIcon} alt="Linkedin icon" />
+          <a href="https://www.linkedin.com/in/gka11-c137/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <img src={linkedinIcon} alt="LinkedIn icon" />
           </a>
         </span>
+
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+          I’m a junior studying Computer Science and Mathematics at Duke University,
+  passionate about algorithms, software systems, and building things that work.
+  I’ve gained experience across startups, academic research, and larger
+  organizations, where I’ve explored everything from machine learning to
+  controls and full-stack development.  
+  Outside of work, I enjoy gaming, chess and football(What you might call "soccer").
         </p>
-        <a href={CV} download>
+
+        <a href={CV} target="_blank" rel="noreferrer">
           <button className="hover">Resume</button>
         </a>
       </div>

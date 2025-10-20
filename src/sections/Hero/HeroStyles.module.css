@@ -59,17 +59,28 @@
 
 .colorMode {
   position: absolute;
-  right: 0;
+  top: -10px;
+  right: -40px;
   width: 25px;
 }
 
 .colorMode:hover {
+  transform: scale(1.1);
   cursor: pointer;
 }
 
 .description {
-  max-width: 24ch;
+  /* wider, readable measure */
+  max-width: 60ch;
+  margin-inline: auto;
+  line-height: 1.6;
+  /* scale gently with viewport */
+  font-size: clamp(0.98rem, 0.35vw + 0.9rem, 1.08rem);
+  /* wrap normally; remove if you previously set pre-line */
+  white-space: normal;
+  hyphens: auto;
 }
+
 
 .info {
   display: flex;

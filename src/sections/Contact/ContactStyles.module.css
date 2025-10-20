@@ -4,6 +4,14 @@
   text-align: center;
 }
 
+.status {
+  margin-top: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--btn-color); /* or any accent color */
+}
+
+
 form {
   display: flex;
   flex-direction: column;
@@ -32,6 +40,15 @@ textarea {
   background-color: var(--background-color);
   color: var(--form-text-color);
 }
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--btn-color);
+  box-shadow: 0 0 4px var(--btn-color);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
 
 ::placeholder {
   color: var(--form-text-color);
