@@ -75,7 +75,7 @@ function Projects() {
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Featured Projects</h1>
-      <p className={styles.subtitle}>A recruiter-friendly overview of selected work across systems, AI, graphics, and product engineering.</p>
+      <p className={styles.subtitle}></p>
       <div className={styles.projectsContainer}>
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
